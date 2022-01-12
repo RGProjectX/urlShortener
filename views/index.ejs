@@ -14,14 +14,14 @@
         <h1 class="text-center">URL Shortener</h1>
         <form action="/shrink" method="post" class="my-4 form-inline">
             <label for="fullURL" class="sr-only">URL</label>
-            <input type="url" name="fullURL" id="fullURL" class="col mx-2">
+            <input type="url" name="fullURL" id="fullURL" class="col mx-2" placeholder="Enter URL">
             <button type="submit" class="btn-primary">Shrink</button>
         </form>
         <% if (url != '') { %>
             <div>
                 <p class="text-center">Short URL :
-                    <span><a href="<%= url %>">
-            <%= url %>
+                    <span><a href="https://urlshortenernode.herokuapp.com/<%= url %>">
+            https://urlshortenernode.herokuapp.com/<%= url %>
                 </a>
                 </span></p>
             </div>
