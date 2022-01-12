@@ -5,7 +5,7 @@ const shortURL = require('./models/shortUrlModel')
 const app = express()
 const PORT = 3000
 
-mongo.connect('mongodb+srv://HackEat:HackEat12@cluster0.q1zla.mongodb.net/findme?retryWrites=true&w=majority', {
+mongo.connect('process.env.DATABASE_URI', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, (err, db) => {
