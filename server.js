@@ -5,7 +5,7 @@ const shortURL = require('./models/shortUrlModel')
 const app = express()
 const PORT = 3000
 
-mongo.connect('process.env.DATABASE_URI', {
+mongo.connect(process.env.DATABASE_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, (err, db) => {
