@@ -3,7 +3,7 @@ const express = require('express')
 const mongo = require('mongoose')
 const shortURL = require('./models/shortUrlModel')
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 5000;
 
 mongo.connect(process.env.DATABASE_URI, {
     useNewUrlParser: true,
